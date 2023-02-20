@@ -11,3 +11,10 @@ from sklearn.metrics import classification_report,f1_score,precision_score,recal
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, StratifiedShuffleSplit
 
 loan = pd.read_csv('train_u6lujuX_CVtuZ9i (1).csv')
+loan = loan.drop(['Loan_ID'],axis=1)
+loan.head().style.set_properties(**{'background-color': 'Yellow',
+                            'color': 'Blue',
+                            'border-color': 'Blue',
+                            'font-size' : '15px','font-family': 'Lucida Calligraphy'})
+display(loan.head())
+        
